@@ -5,22 +5,38 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge.
 Overview:
 ---------
 
-1.This competition is a multi-class classification challenge where users are asked to classify text into 6 different categories.
-Different platforms/sites can have different standards for their toxic screening process. Hence the comments are tagged in the following five categories
+1. This competition is a multi-class classification challenge where users are asked to classify text into 6 different     categories.
+   Different platforms/sites can have different standards for their toxic screening process. Hence the comments are tagged in   the following five categories:
 
-toxic
-severe_toxic
-obscene
-threat
-insult
-identity_hate
-The tagging was done via crowdsourcing which means that the dataset was rated by different people.
+   1. toxic
+   2. severe_toxic
+   3. obscene
+   4. threat
+   5. insult
+   6. identity_hate
+   
+  The tagging was done via crowdsourcing which means that the dataset was rated by different people.
+
 
 
 
 2. I ran all my models in Google Colaboratory  https://colab.research.google.com/ which is a an absolutely free service running in cloud and provides a setup for running Machine Learning and Deep Learning projects. It is equipped with Python 3 and K80 GPU ,which can be run for 12 hrs continuously. For the Keras models that I ran ,used CuDNNLSTM and CuDNNGRU(Fast GPU cversion of native LSTM and GRU).
 
-3. The dataset is an imbalanced one ,out of 159571 records present in dataset 143346 records are clean ,which means they were not classified to any of the category mentioned above
+
+
+3. The dataset is an imbalanced one ,out of 159571 records present in dataset 143346 records are clean ,which means they were not classified to any of the category mentioned above.The classification across categories are mentioned below ,please note multiple tags are associated with comments.
+
+   1. toxic         15294
+   2. severe_toxic  1595
+   3. obscene       8449
+   4. threat        478
+   5. insult        7877
+   6. identity_hate 1405  
+
+
+4. Used various pre-trained embedding vectors such as FastText, Glove ,Google News Word2Vec, Resnet.
+
+5.
 
 
 

@@ -53,3 +53,4 @@ Overview:
 | Attention Model w/Data Augmn|      0.9781                    |      0.9782
 | Pool Model w/Data Augm      |      0.9823                    |      0.9839
 | With XGBoost                |      0.9696                    |      0.9703
+| RandomForestClassifier      |      0.9404                    |      0.9396

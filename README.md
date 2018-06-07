@@ -54,3 +54,4 @@ Overview:
 | Pool Model w/Data Augm      |      0.9823                    |      0.9839
 | With XGBoost                |      0.9696                    |      0.9703
 | RandomForestClassifier      |      0.9404                    |      0.9396
+| Logistic Regression         |      0.9739                    |      0.9736

@@ -36,8 +36,22 @@ Overview:
 4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .   
 
 
-5. Embedding : Used various pre-trained embedding vectors such as FastText, Glove Twitter,Google News Word2Vec, Resnet.
+5. Embedding : Used various pre-trained embedding vectors mentioned below.
    Resnet seems to give the best result for a single model.
+   
+   crawl-300d-2M.vec
+
+   glove.840B.300d.w2vec.txt
+
+   wiki.en.vec
+
+   glove.twitter.27B.200d.txt
+
+   GoogleNews-vectors-negative300.bin
+
+   numberbatch-en.txt
+
+
    
 6. Concatenated Glove[300] and Resnet[300] vectors with a total dimension of 600 for the Embedding Layer ,did not give a better result .
 

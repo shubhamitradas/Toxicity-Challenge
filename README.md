@@ -34,9 +34,9 @@ Overview:
    6. identity_hate 1405  
 
 
-4. Used various pre-trained embedding vectors such as FastText, Glove ,Google News Word2Vec, Resnet.
+4. **Embedding ** Used various pre-trained embedding vectors such as FastText, Glove Twitter,Google News Word2Vec, Resnet.
 
-5.
+5.Glove embedding, 200, 300, crawl, twitter, wiki Twitter/200 turned out to be the best which led me to think that simpler embeddings generalize better
 
 
 

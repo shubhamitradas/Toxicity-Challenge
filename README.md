@@ -48,6 +48,7 @@ Overview:
 8. Data Augmentation :I tried some Data Augmentation Library available like SMOTE ,but did not help the score.
   Found an effective and innovative way of Data Augmentation from another kaggler : 
   https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/discussion/48038
+  
   This is basically translating English  Text to French/Spanish/German ,and then back to English using Google Translate API.
   The newly translated text is then added to our training Dataset ,this did help in improving the score.
   

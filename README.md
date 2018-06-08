@@ -33,7 +33,7 @@ Overview:
    5. insult        7877
    6. identity_hate 1405
    
-4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .   
+4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .Hyperparameter tuning too had minor impact on the score.   
 
 
 5. Embedding : Used various pre-trained embedding vectors mentioned below.

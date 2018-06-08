@@ -31,12 +31,19 @@ Overview:
    3. obscene       8449
    4. threat        478
    5. insult        7877
-   6. identity_hate 1405  
+   6. identity_hate 1405
+   
+4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .   
 
 
-4. **Embedding ** Used various pre-trained embedding vectors such as FastText, Glove Twitter,Google News Word2Vec, Resnet.
+5. Embedding : Used various pre-trained embedding vectors such as FastText, Glove Twitter,Google News Word2Vec, Resnet.
+   Resnet seems to give the best result for a single model.
+   
+6. Concatenated Glove[300] and Resnet[300] vectors with a total dimension of 600 for the Embedding Layer ,did not give a better result .
 
-5.Glove embedding, 200, 300, crawl, twitter, wiki Twitter/200 turned out to be the best which led me to think that simpler embeddings generalize better
+7.Added NLTK POS Tag information to the concatenated vector of dimension 601 :
+ Embedding Vector = Glove + Resnet + POS (300 + 300 + 1).
+ This yielded a slighly better result in the private leaderboard.
 
 
 

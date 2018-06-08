@@ -41,14 +41,17 @@ Overview:
    
 6. Concatenated Glove[300] and Resnet[300] vectors with a total dimension of 600 for the Embedding Layer ,did not give a better result .
 
-7.Added NLTK POS Tag information to the concatenated vector of dimension 601 :
+ 7. Added NLTK POS Tag information to the concatenated vector of dimension 601 :
  Embedding Vector = Glove + Resnet + POS (300 + 300 + 1).
  This yielded a slighly better result in the private leaderboard.
  
-8.Data Augmentation :I tried some Data Augmentation Library available like SMOTE ,but did not help the score.
-  Found an effective and innovative way of Data Augmentation from another kaggler : https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/discussion/48038
-   This is basically translating English  Text to French ,and then back to English using Google Translate API.
-   The newly translated text is then added to our training Dataset ,this did help in improving the score.
+8. Data Augmentation :I tried some Data Augmentation Library available like SMOTE ,but did not help the score.
+  Found an effective and innovative way of Data Augmentation from another kaggler : 
+  https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/discussion/48038
+  This is basically translating English  Text to French/Spanish/German ,and then back to English using Google Translate API.
+  The newly translated text is then added to our training Dataset ,this did help in improving the score.
+  
+ 9. Blending : Averaging/Weighted Averaging of the output files from the different models ,had the best score on the LeaderBoard. 
 
 
 

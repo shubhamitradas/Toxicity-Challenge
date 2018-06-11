@@ -33,7 +33,8 @@ Overview:
    5. insult        7877
    6. identity_hate 1405
    
-4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .Hyperparameter tuning too had minor impact on the score.   
+4. For most of the models/embeddings that I tried pre-processing the data did not influence the score much for the Deep Learning models .Hyperparameter tuning too had minor impact on the score. 
+
 
 
 5. Embedding : Used various pre-trained embedding vectors mentioned below.
@@ -55,9 +56,12 @@ Overview:
    
 6. Concatenated Glove[300] and Resnet[300] vectors with a total dimension of 600 for the Embedding Layer ,did not give a better result .
 
- 7. Added NLTK POS Tag information to the concatenated vector of dimension 601 :
+
+7. Added NLTK POS Tag information to the concatenated vector of dimension 601 :
  Embedding Vector = Glove + Resnet + POS (300 + 300 + 1).
  This yielded a slighly better result in the private leaderboard.
+ 
+ 
  
 8. Data Augmentation :I tried some Data Augmentation Library available like SMOTE ,but did not help the score.
   Found an effective and innovative way of Data Augmentation from another kaggler : 
@@ -66,7 +70,8 @@ Overview:
   This is basically translating English  Text to French/Spanish/German ,and then back to English using Google Translate API.
   The newly translated text is then added to our training Dataset ,this did help in improving the score.
   
- 9. Blending : Averaging/Weighted Averaging of the output files from the different models ,had the best score on the LeaderBoard. 
+  
+ 9. Blending : Averaging/Weighted Averaging of the output files from the different single models had the best score on the    LeaderBoard. This could be due to the fact that errors from the different models average out and provides a more general output. My final score on the Private Leaderboard with 75% Test data was 0.9862.
 
 
 

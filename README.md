@@ -89,13 +89,13 @@ Overview:
 
 
 
-|      Model                  | Private LB Score(25% Test Data)| Public LB Score(25% Test Data) 
+|      Model                  | Private LB Score(75% Test Data)| Public LB Score(25% Test Data) 
 | --------------------------- | -------------------------------| -------------------------------|
 | Attention Model & Glove     |      0.9804                    |      0.9814
 | Attention Model & ConceptNet|      0.9820                    |      0.9827
 | Attention Model & FastText  |      0.9788                    |      0.9786
-| Attention Model w/Data Augmn|      0.9781                    |      0.9782
-| Pool Model w/Data Augm      |      0.9823                    |      0.9839
+| Attention Model w/Data Augmn|      0.9823                    |      0.9839
+| Pool Model w/Data Augm      |      0.9781                    |      0.9785
 | With XGBoost                |      0.9696                    |      0.9703
 | RandomForestClassifier      |      0.9404                    |      0.9396
 
